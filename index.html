@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{user.fullName}}'s Profile</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <style>
+        h2 {
+            color: black;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .section {
+            display: block;
+        }
+
+        .names {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .name {
+            width: 50%;
+        }
+
+        @media (max-width: 960px) {
+            .names {
+                display: block;
+            }
+
+            .names {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .header {
+                display: block;
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            .name {
+                width: 100%;
+            }
+        }
+
+        .pic {
+            display: flex;
+            justify-content: end;
+        }
+
+        body {
+            background-color: whitesmoke;
+
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .block {
+            margin: 0;
+            background-color: rgba(127, 255, 212, 0.914);
+        }
+
+        h1 {
+            justify-content: center;
+        }
+    </style>
+    <div class="profile-container">
+        <div class="header block">
+            <div class="heading">
+                <h1>{{user.fullName}}</h1>
+                <p>{{user.address}}</p>
+                <p>Phone: {{user.phone}}</p>
+                <p>Email: <a href="mailto:{{user.email}}">{{user.email}}</a></p>
+            </div>
+            <div class="pic">
+                <img src="{{user.photo}}" width="150">
+            </div>
+        </div>
+
+        <div class="names">
+            <div class="name">
+                <div class="section">
+                    <h2>Executive Summary</h2>
+                    <p>{{executiveSummary}}</p>
+                </div>
+                <div class="section">
+                    <h2>Experience</h2>
+                    <h3>{{experience.role}}</h3>
+                    <p>{{experience.description}}</p>
+                </div>
+
+                <div class="section">
+                    <h2>Education</h2>
+                    <ul>
+                        {{#each education}}
+                        <li>
+                            <strong>{{institutionName}}</strong> - {{course}} ({{year}})
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        {{#each skills}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text">
+
+
+                <div class="section">
+                    <h2>Languages</h2>
+                    <ul>
+                        {{#each languages}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+
+                <div class="section">
+                    <h2>References</h2>
+                    <ul>
+                        {{#each references}}
+                        <li>
+                            <strong>{{name}}</strong><br>
+                            Contact: {{contacts}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

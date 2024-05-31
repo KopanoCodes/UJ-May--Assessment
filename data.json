@@ -1,0 +1,57 @@
+{
+    "user": {
+        "fullName": "Kopano Mabuya",
+        "photo": "./Kopano.jpg",
+        "address": "Johannesburg Gauteng South Africa",
+        "phone": "0659220132",
+        "email": "kopanomabuya@gmail"
+    },
+    
+    "executiveSummary": "I am currently working as a Web Development Intern at University of Johannesburg. I formerly worked as a Supply Planning Assistant in a FMCG environment. I have great communication skills I am results oriented and my skills precedes me. I am seeking for a new challenging role in developing robust software.",
+    "skills": {
+        "1": "Adaptability",
+        "2": "Attention to Detail",
+        "3": "HTML and CSS",
+        "4": "Machine Learning",
+        "5": "Microsoft D365",
+        "6": "Strong Work Ethic",
+        "7": "Flexibility",
+        "8": "Emotional Intelligence",
+        "9": "Great Communication Skills"
+    },
+    "experience": {
+        "role": "Accenture/UJ - 4IR Intern (current)",
+        "description": "Learning skills focusing on Business Engineering Systems Full Stack Web Development. Learning Machine Learning and other programming languages such as HTML CSS and JavaScript"
+    },
+    "education": [
+        {
+            "institutionName": "Damelin City Campus",
+            "course": "Bachelor of Commerce in Information Management",
+            "year": "2014"
+        },
+        {
+            "institutionName": "Namedi Secondary School",
+            "course": "NQF4",
+            "year": "2011"
+        }
+    ],
+    "languages": {
+        "1": "English",
+        "2": "Sesotho",
+        "3": "Isizulu"
+    },
+    "references": [
+        {
+            "name": "Mr. Jacob Nhlapho, Supply Chain Manager: Barron Trading",
+            "contacts": "jacob.nhlapho@barron.com, +27 11 467 8700"
+        },
+        {
+            "name": "Ms. Liepollo Rabelemane, Supply Planner: Barron Trading",
+            "contacts": "liepollo@barron.com, +27 11 467 9246"
+        },
+        {
+            "name": "Mrs. Adri Van Zyl, Cost Accountant: Barron Trading",
+            "contacts": "adri@barron.com, +27 11 457 8700"
+        }
+    ]
+}
